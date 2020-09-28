@@ -66,6 +66,9 @@ body {
   font-size: 7rem;
 }
 
+h3:hover {
+  color: #0d7377;
+}
 /*
  green : 4f9ea1
  white : E4E9FD
