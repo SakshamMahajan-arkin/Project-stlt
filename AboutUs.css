@@ -16,8 +16,9 @@ body {
 
 
 .navbar {
+  z-index: 2;
   background-color: #0d7377;
-  box-shadow: 0px 5px 8px #888888;
+  box-shadow: 0px 5px 8px #0d7377;
   padding: 0.5rem 15rem 0.5rem;
 }
 .navbar-brand {
@@ -29,6 +30,7 @@ body {
   font-size: 1.2rem;
   font-weight: lighter;
 }
+
 .nav-link:hover {
   color: #eeeeee!important;
 }
@@ -40,7 +42,7 @@ body {
 .carousel-inner {
   background-color: #E4E9FD;
     background-image: -webkit-linear-gradient(65deg, #E4E9FD 50%, #4f9ea1 50%);
-   min-height: 1000px;
+   min-height: 100vh;
 }
 
 .carousel-item {
@@ -55,7 +57,6 @@ body {
 .testimonial-image {
   width: 30%;
   border-radius: 20%;
-  margin: 20px;
 }
 
 .our-team {
@@ -69,6 +70,33 @@ body {
 h3:hover {
   color: #0d7377;
 }
+
+#footer {
+  padding: 4%;
+  background-color: #E4E9FD;
+}
+.footer-icon {
+  margin: 20px 10px;
+  color: black;
+}
+
+.fa-twitter:hover {
+  color: #00acee;
+}
+
+.fa-facebook:hover {
+  color: #3b5998;
+}
+
+.fa-instagram:hover {
+  color: #8a3ab9;
+}
+
+.fa-envelope:hover {
+  color: #ffd36b;
+}
+
+
 /*
  green : 4f9ea1
  white : E4E9FD
