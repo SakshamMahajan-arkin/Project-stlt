@@ -1,0 +1,25 @@
+body{
+  background-image: url('1.jpg');
+  background-size: cover;
+  height: 100vh;
+  justify-content: center;
+}
+.f{
+  margin-left: 20%;
+  font-weight: bold;
+}
+.form_reg{
+  width: 50%;
+  margin-top: 3%;
+  margin-left: 3%;
+}
+.start{
+  padding-top: 7%;
+  padding-left: 20%;
+}
+.ji{
+  margin-top: 2%;
+  margin-bottom: 2%;
+  text-decoration: underline;
+  font-weight:bold;
+}
