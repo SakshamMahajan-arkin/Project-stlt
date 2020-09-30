@@ -14,9 +14,9 @@
     <title>Home tutor</title>
 </head>
 
-<body>
+<body style="background-color:#b2aad3;">
     <!-- ----------------------------  Navigation ---------------------------------------------- -->
-    <div class="header container-fluid">
+    <div class=" container-fluid">
         <nav class="navbar navbar-expand-lg navbar-light ">
             <a class="navbar-brand" href="index.html">Home Tutor</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -43,30 +43,53 @@
                 </ul>
             </div>
         </nav>
-        <div class="header-content row">
-            <div class="col-lg-4 ">
-                <h1 class="header-h1">You can learn anything.</h1>
-                <div class="search-form">
+        <?php 
 
-                    <form class="search-for-form" action="login.php" method="POST">
-                        <input type="number" name="search" placeholder="pincode">
+if(isset($_POST['submit'])){
+  $search = $_POST['search'];
+            
+  $connection=mysqli_connect('localhost','root','','search_pincode');
+  if(!$connection)
+  {
+    die("NOT CONNECTED");
+  }     
 
-                        <button class="searchButton" name="submit" type="submit" value="Submit">
-                            <i class="fa fa11 fa-search "></i>
-                        </button>
-                    </form>
+  $query = "SELECT * FROM data_tutor WHERE pincode LIKE '%$search%' ";
+  $search_query = mysqli_query($connection, $query);
 
-                </div>
-                <h2 class="header-h2 ">Search best tutor near you.</h2>
-            </div>
+  if(!$search_query) {
+
+      die("QUERY FAILED" . mysqli_error($connection));
+
+  }
+  else
+  {
+    while($row = mysqli_fetch_assoc($search_query))
+    {
+      $name = $row['name'];
+      $subject= $row['subject'];
+      $price = $row['price'];
+      ?>
+     
+      <div class="card" style="width: 18rem; margin:2rem; text-align:center;">
+      <img class="card-img-top" src="./<?php echo $post_image;?>" alt="Card image cap">
+        <div class="card-body">
+          <h3 class="card-title"> <?php echo $name ?></h5>
+          <h3 class="card-title"> <?php echo $subject ?></h5>
+          <h3 class="card-title"> <?php echo $price ?></h5>
         </div>
-
-
+      </div>
+      
+      <?php
+    }
+  }
+}
+?>
     </div>
     <!-- navigation -->
 
     <div class="blank ">
-
+    
 
     </div>
     <!-- footer -->
