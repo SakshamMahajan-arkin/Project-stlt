@@ -23,15 +23,15 @@ ul {
 }
 
 .navbar-brand {
-    font-size: 1.6rem;
-    margin-left: 11px;
+    font-size: 2.3rem;
+    margin-left: 35px;
     font-family: 'Chelsea Market', cursive;
     color: white;
 }
 
 .nav-link {
     font-family: 'Balsamiq Sans', cursive;
-    font-size: 1rem;
+    font-size: 1.3rem;
 }
 
 .navbar-nav {
@@ -43,18 +43,18 @@ ul {
 }
 
 .header-h1 {
-    font-size: 2.2rem;
+    font-size: 3rem;
     font-family: 'Chelsea Market', cursive;
     color: white;
-    margin-top: 60px;
+    margin-top: 80px;
     /* margin-left: 20px; */
 }
 
 .header-h2 {
     font-family: 'Chelsea Market', cursive;
-    font-size: 1.5rem;
-    margin-top: 25px;
-    margin-left: 10px;
+    font-size: 2rem;
+    margin-top: 40px;
+    margin-left: 30px;
     /* margin-left: 20px; */
 }
 
@@ -66,7 +66,7 @@ ul {
 search */
 
 .search-form {
-    margin-left: 150px;
+    margin-left: 220px;
     margin-top: 80px;
 }
 
