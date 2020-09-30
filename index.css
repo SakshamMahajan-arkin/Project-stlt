@@ -1,0 +1,105 @@
+html,
+body {
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+
+/* header  */
+
+.header {
+    background: url('./2.png');
+    background-size: cover;
+    height: 100vh;
+    justify-content: center;
+}
+
+.navbar-brand {
+    font-size: 1.6rem;
+    margin-left: 11px;
+    font-family: 'Chelsea Market', cursive;
+    color: white;
+}
+
+.nav-link {
+    font-family: 'Balsamiq Sans', cursive;
+    font-size: 1rem;
+}
+
+.navbar-nav {
+    margin-right: 35px;
+}
+
+.header-content {
+    text-align: center;
+}
+
+.header-h1 {
+    font-size: 2.2rem;
+    font-family: 'Chelsea Market', cursive;
+    color: white;
+    margin-top: 60px;
+    /* margin-left: 20px; */
+}
+
+.header-h2 {
+    font-family: 'Chelsea Market', cursive;
+    font-size: 1.5rem;
+    margin-top: 25px;
+    margin-left: 10px;
+    /* margin-left: 20px; */
+}
+
+
+/* endnavigation */
+
+
+/* footer  */
+
+.footer {
+    height: 100%;
+    position: relative;
+    background-color: black;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.footer-font {
+    font-family: 'Balsamiq Sans', cursive;
+    color: white;
+    font-size: 1.2rem;
+}
+
+.fab-color {
+    color: white;
+    padding: 4px;
+}
+
+.fab-color:hover {
+    color: #a1c4cf;
+}
+
+.ancor {
+    text-decoration: none;
+}
+
+.brief-footer {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+.copyright {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1rem;
+}
+
+
+/* footer  */
