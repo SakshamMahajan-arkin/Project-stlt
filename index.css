@@ -32,6 +32,7 @@ ul {
 .nav-link {
     font-family: 'Balsamiq Sans', cursive;
     font-size: 1.3rem;
+    margin-left: 12px;
 }
 
 .navbar-nav {
@@ -66,7 +67,7 @@ ul {
 search */
 
 .search-form {
-    margin-left: 220px;
+    margin-left: 240px;
     margin-top: 80px;
 }
 
@@ -129,7 +130,7 @@ input {
 }
 
 .search-for-form:hover {
-    width: 200px;
+    width: 300px;
     cursor: pointer;
 }
 
