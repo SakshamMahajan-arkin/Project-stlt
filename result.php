@@ -14,9 +14,9 @@
     <title>Home tutor</title>
 </head>
 
-<body style="background-color:#b2aad3;">
+<body >
     <!-- ----------------------------  Navigation ---------------------------------------------- -->
-    <div class=" container-fluid">
+    <div class=" container-fluid header-2">
         <nav class="navbar navbar-expand-lg navbar-light ">
             <a class="navbar-brand" href="index.html">Home Tutor</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -71,14 +71,17 @@ if(isset($_POST['submit'])){
       $price = $row['price'];
       ?>
      
-      <div class="card" style="width: 18rem; margin:2rem; text-align:center;">
-      <img class="card-img-top" src="./<?php echo $post_image;?>" alt="Card image cap">
-        <div class="card-body">
-          <h3 class="card-title"> <?php echo $name ?></h5>
-          <h3 class="card-title"> <?php echo $subject ?></h5>
-          <h3 class="card-title"> <?php echo $price ?></h5>
+     <div class="card">
+        <img src="img_avatar.png" alt="John" style="width:100%">
+        <div class="padd">
+            <h1 class="name"><?php echo $name ?></h1>
+            <p class="title11"><?php echo $subject ?></p>
+            <p class="something">Harvard University</p>
         </div>
-      </div>
+        
+        
+        <p><button class="buttonnn"><?php echo $price ?></button></p>
+    </div>
       
       <?php
     }
