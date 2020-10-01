@@ -3,6 +3,7 @@ body {
     margin: 0%;
     box-sizing: border-box;
     text-align: center;
+    background: url("images/bg1.jpg");
 }
 
 a {
@@ -20,10 +21,10 @@ h3 {
 /* header  */
 
 .header {
-    background-color: #E4E9FD;
+    /* background-color: #E4E9FD;
     background-image: -webkit-linear-gradient(65deg, #E4E9FD 50%, #b2aad3 50%);
     /* background: linear-gradient(110deg, #fdcd3b 60%, #ffed4b 60%); */
-    background-size: cover;
+    /* background-size: cover; */
     height: 100vh;
     justify-content: center;
 }
