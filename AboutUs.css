@@ -105,7 +105,7 @@ h3 {
 }
 
 .fab-color:hover {
-    color: #a1c4cf;
+    color: red;
 }
 
 .ancor {
@@ -120,6 +120,7 @@ h3 {
 .copyright {
     font-family: 'Ubuntu', sans-serif;
     font-size: 1rem;
+    color: #fff;
 }
 
 

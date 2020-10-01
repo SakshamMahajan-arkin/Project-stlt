@@ -11,7 +11,32 @@ body, html{
 
 body {
   background: url("images/2.png");
+  min-height: 100vh;
+  box-sizing: border-box;
 }
+
+.notfooter {
+  height: 100vh;
+}
+
+.navbar-brand {
+    font-size: 1.6rem;
+    margin-left: 11px;
+    font-family: 'Chelsea Market', cursive;
+    color: white;
+}
+
+.nav-link {
+    font-family: 'Balsamiq Sans', cursive;
+    font-size: 1rem;
+}
+
+.navbar-nav {
+    margin-right: 35px;
+}
+
+
+
 
 .container{
   width:400px;
@@ -184,4 +209,42 @@ input[type='email']:active:focus::-webkit-input-placeholder
   background:#fff;
   -webkit-transform:rotate(-45deg);
   transform:rotate(-45deg);
+}
+
+
+.footer {
+    background-color: black;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.footer-font {
+    font-family: 'Balsamiq Sans', cursive;
+    color: white;
+    font-size: 1.2rem;
+}
+
+.fab-color {
+    color: white;
+    padding: 4px;
+}
+
+.fab-color:hover {
+    color: red;
+}
+
+.ancor {
+    text-decoration: none;
+}
+
+.brief-footer {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    color: #fff;
+}
+
+.copyright {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1rem;
+    color: #fff
 }
