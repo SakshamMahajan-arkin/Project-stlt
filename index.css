@@ -21,12 +21,13 @@
         background-attachment: fixed;
         background-size: cover;
         position: relative;
+        min-height: 80vh;
     }
     
     .header {
         background: url('./2.png');
         background-size: cover;
-        height: 100vh;
+        height: 110vh;
         justify-content: center;
     }
     
@@ -49,6 +50,13 @@
     
     .header-content {
         text-align: center;
+    }
+    
+    .noresult {
+        font-size: 3rem;
+        font-family: 'Chelsea Market', cursive;
+        margin: 50px;
+        color: black;
     }
     
     .header-h1 {
