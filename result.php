@@ -48,13 +48,13 @@
 if(isset($_POST['submit'])){
   $search = $_POST['search'];
             
-  $connection=mysqli_connect('localhost','root','','search_pincode');
+  $connection=mysqli_connect('localhost','root','','registration');
   if(!$connection)
   {
     die("NOT CONNECTED");
   }     
 
-  $query = "SELECT * FROM data_tutor WHERE pincode LIKE '%$search%' ";
+  $query = "SELECT * FROM tutor WHERE pin LIKE '%$search%' ";
   $search_query = mysqli_query($connection, $query);
 
   if(!$search_query) {
@@ -64,29 +64,40 @@ if(isset($_POST['submit'])){
   }
   else
   {
-    while($row = mysqli_fetch_assoc($search_query))
-    {
-      $name = $row['name'];
-      $subject= $row['subject'];
-      $price = $row['price'];
-      ?>
-     
-     <div class="card">
-        <img src="img_avatar.png" alt="John" style="width:100%">
-        <div class="padd">
-            <h1 class="name"><?php echo $name ?></h1>
-            <p class="title11"><?php echo $subject ?></p>
-            <p class="something">Harvard University</p>
+      $count = mysqli_num_rows($search_query);
+      if($count==0)
+      {
+        echo "<h1 class='noresult'>No result</h1>";
+      }
+      else
+      {
+        while($row = mysqli_fetch_assoc($search_query))
+        {
+          $name = $row['name'];
+          $subject= $row['subject'];
+          $price = $row['price'];
+          $phn = $row['field'];
+          $email =$row['email'];
+          ?>
+         
+         <div class="card">
+            <img src="img_avatar.png" alt="John" style="width:100%">
+            <div class="padd">
+                <h1 class="name"><?php echo $name ?></h1>
+                <p class="title11"><?php echo $subject ?></p>
+                <p class="something"><?php echo $email ?></p>
+            </div>
+            
+            
+            <p><button class="buttonnn"><?php echo $phn ?></button></p>
         </div>
-        
-        
-        <p><button class="buttonnn"><?php echo $price ?></button></p>
-    </div>
-      
-      <?php
+          
+          <?php
+        }
+      }
     }
-  }
-}
+      }
+    
 ?>
     </div>
     <!-- navigation -->

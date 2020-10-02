@@ -21,6 +21,7 @@
         background-attachment: fixed;
         background-size: cover;
         position: relative;
+        min-height: 80vh;
     }
     
     .header {
@@ -49,6 +50,13 @@
     
     .header-content {
         text-align: center;
+    }
+    
+    .noresult {
+        font-size: 3rem;
+        font-family: 'Chelsea Market', cursive;
+        margin: 50px;
+        color: black;
     }
     
     .header-h1 {
