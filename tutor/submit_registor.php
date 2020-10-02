@@ -12,7 +12,12 @@ if (isset($_POST['submit'])){
     $type=$_POST['Designatio'];
     $connection=mysqli_connect('localhost', 'root','','registration');
     //echo $type;
-    $query = "INSERT INTO student(name,email,phone,field,pin,price) ";
+    if ($type=='student'){
+      $query = "INSERT INTO student(name,email,phone,field,pin,price) ";
+    }
+    else{
+      $query = "INSERT INTO tutor(name,email,phone,field,pin,price) ";
+    }
     $query .= "VALUES ('$name','$email','$phone','$field',$pin,$price)";
     $result=mysqli_query($connection,$query);
 
