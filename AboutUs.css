@@ -1,0 +1,127 @@
+html,
+body {
+    margin: 0%;
+    box-sizing: border-box;
+    text-align: center;
+    background: url("images/bg1.jpg");
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+h3 {
+  color: #b2aad3;
+}
+
+/* header  */
+
+.header {
+    /* background-color: #E4E9FD;
+    background-image: -webkit-linear-gradient(65deg, #E4E9FD 50%, #b2aad3 50%);
+    /* background: linear-gradient(110deg, #fdcd3b 60%, #ffed4b 60%); */
+    /* background-size: cover; */
+    height: 100vh;
+    justify-content: center;
+}
+
+.navbar-brand {
+    font-size: 1.6rem;
+    margin-left: 11px;
+    font-family: 'Chelsea Market', cursive;
+    color: white;
+}
+
+.nav-link {
+    font-family: 'Balsamiq Sans', cursive;
+    font-size: 1rem;
+}
+
+.navbar-nav {
+    margin-right: 35px;
+}
+
+
+/* endnavigation */
+
+
+.CAROUSEL {
+   color: #fff;
+}
+
+.carousel-inner {
+     height: 100vh;
+}
+
+.carousel-item {
+    padding: 7% 15%;
+}
+.testimonial-heading  {
+  font-size: 3rem;
+  line-height: 1.5;
+  font-weight: 600;
+}
+
+.testimonial-image {
+  width: 30%;
+  border-radius: 20%;
+}
+
+.our-team {
+  padding-top: 7%;
+}
+
+.fa-long-arrow-alt-right {
+  font-size: 7rem;
+}
+
+
+
+
+/* footer  */
+
+.footer {
+    height: 100%;
+    position: relative;
+    background-color: black;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.footer-font {
+    font-family: 'Balsamiq Sans', cursive;
+    color: white;
+    font-size: 1.2rem;
+}
+
+.fab-color {
+    color: white;
+    padding: 4px;
+}
+
+.fab-color:hover {
+    color: #a1c4cf;
+}
+
+.ancor {
+    text-decoration: none;
+}
+
+.brief-footer {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    color: #fff;
+}
+
+.copyright {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1rem;
+    color: #fff;
+}
+
+
+/* footer  */
