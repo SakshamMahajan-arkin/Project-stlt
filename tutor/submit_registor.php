@@ -75,10 +75,10 @@ if (isset($_POST['submit'])){
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav ml-auto">
                   <li class="nav-item active ">
-                      <a class="nav-link" href="/n/index.php">Home <span class="sr-only">(current)</span></a>
+                      <a class="nav-link" href="../index.php">Home <span class="sr-only">(current)</span></a>
                   </li>
                   <li class="nav-item">
-                      <a class="nav-link" href="/n/AboutUs.html">About US</a>
+                      <a class="nav-link" href="../AboutUs.html">About US</a>
                   </li>
                   <li class="nav-item">
                       <a class="nav-link" href="registration.php">Register</a>
@@ -90,7 +90,7 @@ if (isset($_POST['submit'])){
                       <a class="nav-link" href="#footer">Contact Us</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="/n/signup.html">Newsletter</a>
+                    <a class="nav-link" href="../signup.html">Newsletter</a>
                   </li>
               </ul>
           </div>
