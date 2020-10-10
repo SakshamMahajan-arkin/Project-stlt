@@ -74,9 +74,9 @@ if(isset($_POST['submit'])){
         while($row = mysqli_fetch_assoc($search_query))
         {
           $name = $row['name'];
-          $subject= $row['subject'];
+          $subject= $row['field'];
           $price = $row['price'];
-          $phn = $row['field'];
+          $phn = $row['phone'];
           $email =$row['email'];
           ?>
          
