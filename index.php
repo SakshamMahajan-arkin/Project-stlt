@@ -51,10 +51,10 @@
                 <h1 class="header-h1">You can learn anything.</h1>
                 <div class="search-form">
 
-                    <form class="search-for-form" action="result.php" method="POST">
+                    <form class="search-for-form" action="result.php" method="POST" autocomplete="off">
                         <input type="number" name="search" placeholder="pincode">
 
-                        <button class="searchButton" name="submit" type="submit" value="Submit">
+                        <button class="searchButton" name="submit" type="submit" value="Submit" autocomplete="off">
                             <i class="fa fa11 fa-search "></i>
                         </button>
                     </form>
